@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário para Google Forms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Formulário para Google Forms</h2>
+    
+    <!-- Aqui está o código completo do iframe -->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdeaeBvrkvAYfhEktYaHv1_az2riOQCjcfy0tu-K7Za61EQsg/viewform?embedded=true" width="640" height="1577" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+
+    <p id="mensagem"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<!--
+Explicação:
+HTML (index.html): Contém a estrutura do formulário HTML que envia dados para o Google Forms. O action do formulário é configurado para enviar os dados para o URL do Google Forms, e os campos de entrada (input) têm seus IDs configurados para corresponder aos IDs dos campos no formulário do Google Forms.
+
+CSS (styles.css): Estiliza o formulário e a página para uma melhor apresentação visual. Isso inclui configurações de fonte, cores, layout e efeitos de transição para o botão de envio.
+
+JavaScript (script.js): Adiciona um script simples que exibe uma mensagem ("Enviando...") quando o formulário é enviado. Isso fornece um feedback visual básico para o usuário enquanto aguarda a conclusão do envio.
+
+Configuração Adicional:
+Substituição do ID do Formulário: No arquivo HTML (index.html), substitua SEU_FORM_ID_AQUI pelo ID do seu formulário Google Forms. Esse ID pode ser encontrado no URL do formulário Google Forms.
+Funcionamento:
+Quando o formulário é preenchido e enviado, os dados são enviados diretamente para o Google Forms usando o método POST.
+O JavaScript opcional fornece feedback visual ("Enviando...") para melhorar a experiência do usuário.
+Este formato separado facilita a gestão e personalização do formulário conforme suas necessidades específicas. Se tiver mais perguntas ou precisar de mais alguma coisa, estou à disposição para ajudar!
+
+-->
+
+
+
+
