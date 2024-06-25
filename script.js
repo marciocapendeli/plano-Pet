@@ -1,8 +1,3 @@
-// script.js
-document.getElementById('googleForm').addEventListener('submit', function(event) {
-    document.getElementById('mensagem').textContent = 'Enviando...';
-    setTimeout(function() {
-      document.getElementById('mensagem').textContent = '';
-    }, 2000); // Limpa a mensagem após 2 segundos
-  });
-  
+document.getElementById('openForm').addEventListener('click', function() {
+  window.open('https://docs.google.com/forms/d/e/1FAIpQLSdeaeBvrkvAYfhEktYaHv1_az2riOQCjcfy0tu-K7Za61EQsg/viewform?embedded=true', '_blank');
+});

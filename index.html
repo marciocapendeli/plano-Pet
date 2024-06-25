@@ -3,19 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário para Google Forms</title>
+  <title>Plano de Saúde Pet</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>Plano de Saúde Pet</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <div class="container">
-    <h2>Formulário para Google Forms</h2>
-    
-    <!-- Aqui está o código completo do iframe -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdeaeBvrkvAYfhEktYaHv1_az2riOQCjcfy0tu-K7Za61EQsg/viewform?embedded=true" width="640" height="1577" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre</h2>
+      <p>Bem-vindo ao melhor plano de saúde para o seu pet! Oferecemos cobertura completa para todas as necessidades de saúde do seu animal de estimação.</p>
+      <button id="openForm">Preencher Formulário</button>
+      <p id="mensagem"></p>
+    </div>
+  </section>
 
-    <p id="mensagem"></p>
-  </div>
+  <section id="servicos" class="section">
+    <div class="container">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Consultas veterinárias</li>
+        <li>Vacinação</li>
+        <li>Cirurgias</li>
+        <li>Exames laboratoriais</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco para mais informações:</p>
+      <p>Telefone: (XX) XXXX-XXXX</p>
+      <p>Email: exemplo@plano-saude-pet.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Plano de Saúde Pet. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
