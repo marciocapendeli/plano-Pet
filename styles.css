@@ -6,9 +6,17 @@
   }
   
   body {
+
+    
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     line-height: 1.6;
+    background-image: url(./img/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x:center ;
+    margin: 100%;
+    padding: auto;
   }
   
   header {
