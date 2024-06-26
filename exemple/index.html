@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+          <legend>Fruit juice size</legend>
+          <p>
+            <input type="radio" name="size" id="size_1" value="small" />
+            <label for="size_1">Small</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="size_2" value="medium" />
+            <label for="size_2">Medium</label>
+          </p>
+          <p>
+            <input type="radio" name="size" id="size_3" value="large" />
+            <label for="size_3">Large</label>
+          </p>
+        </fieldset>
+      </form>
+      <form>
+        <p>
+          <label for="taste_1">I like cherry</label>
+          <input type="checkbox" id="taste_1" name="taste_cherry" value="1">
+        </p>
+        <p>
+          <label for="taste_2">I like banana</label>
+          <input type="checkbox" id="taste_2" name="taste_banana" value="2">
+        </p>
+      </form>
+      <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
+
+<!-- So this: -->
+<div>
+  <label for="username">Name:</label>
+  <input type="text" name="username">
+  <label for="username"><abbr title="required">*</abbr></label>
+</div>
+
+<!-- would be better done like this: -->
+<div>
+  <label for="username">
+    <span>Name:</span>
+    <input id="username" type="text" name="username">
+    <abbr title="required">*</abbr>
+  </label>
+</div>
+
+<!-- But this is probably best: -->
+<div>
+  <label for="username">Name: <abbr title="required">*</abbr></label>
+  <input id="username" type="text" name="username">
+</div>
+
+<body>
+    <h1>Formulário de Contato</h1>
+    <form action="/submit" method="post">
+        <label for="name">Nome:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Mensagem:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
