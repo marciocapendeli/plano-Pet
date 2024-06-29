@@ -29,6 +29,7 @@ header .container {
   align-items: center;
 }
 
+
 header h1 {
   margin-left: 20px;
 }
@@ -130,10 +131,9 @@ fieldset{
 /* Footer */
 footer {
   background-color: #333;
-  color: #fff;
   text-align: center;
-  padding: 10px 0;
-  width: 100%;
+  padding: 1px ;
+  
   /* Adicione flex-shrink: 0 para evitar que o footer encolha */
   flex-shrink: 0;
   
