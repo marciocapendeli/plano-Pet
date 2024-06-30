@@ -1,75 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cartao {
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 10px;
+      padding: 10px 10px 10px 10px;
+      width: 15%;
+      background-color: white;
+      
+      
+    }
+    .bloco{
+      background-color: white;
+    }
+    .botao-foto{
+      border: 1px solid black;
+      text-decoration: none;
+      border-radius: 15px;
+      padding: 5px;
+      background-color: rgb(90, 131, 90);
+      color: white;
+    }
+    .imagem-banner{
+      
+      height: 200px;
+      width: 200px;
+    }
+    
+  </style>
+
 </head>
+
 <body>
-    <form>
-        <fieldset>
-          <legend>Fruit juice size</legend>
-          <p>
-            <input type="radio" name="size" id="size_1" value="small" />
-            <label for="size_1">Small</label>
-          </p>
-          <p>
-            <input type="radio" name="size" id="size_2" value="medium" />
-            <label for="size_2">Medium</label>
-          </p>
-          <p>
-            <input type="radio" name="size" id="size_3" value="large" />
-            <label for="size_3">Large</label>
-          </p>
-        </fieldset>
-      </form>
-      <form>
-        <p>
-          <label for="taste_1">I like cherry</label>
-          <input type="checkbox" id="taste_1" name="taste_cherry" value="1">
-        </p>
-        <p>
-          <label for="taste_2">I like banana</label>
-          <input type="checkbox" id="taste_2" name="taste_banana" value="2">
-        </p>
-      </form>
-      <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
+  <form>
+    <fieldset>
+      <legend>Fruit juice size</legend>
+      <p>
+        <input type="radio" name="size" id="size_1" value="small" />
+        <label for="size_1">Small</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_2" value="medium" />
+        <label for="size_2">Medium</label>
+      </p>
+      <p>
+        <input type="radio" name="size" id="size_3" value="large" />
+        <label for="size_3">Large</label>
+      </p>
+    </fieldset>
+  </form>
+  <form>
+    <p>
+      <label for="taste_1">I like cherry</label>
+      <input type="checkbox" id="taste_1" name="taste_cherry" value="1">
+    </p>
+    <p>
+      <label for="taste_2">I like banana</label>
+      <input type="checkbox" id="taste_2" name="taste_banana" value="2">
+    </p>
+  </form>
+  <p>Required fields are followed by <abbr title="required">*</abbr>.</p>
 
-<!-- So this: -->
-<div>
-  <label for="username">Name:</label>
-  <input type="text" name="username">
-  <label for="username"><abbr title="required">*</abbr></label>
-</div>
+  <!-- So this: -->
+  <div>
+    <label for="username">Name:</label>
+    <input type="text" name="username">
+    <label for="username"><abbr title="required">*</abbr></label>
+  </div>
 
-<!-- would be better done like this: -->
-<div>
-  <label for="username">
-    <span>Name:</span>
+  <!-- would be better done like this: -->
+  <div>
+    <label for="username">
+      <span>Name:</span>
+      <input id="username" type="text" name="username">
+      <abbr title="required">*</abbr>
+    </label>
+  </div>
+
+  <!-- But this is probably best: -->
+  <div>
+    <label for="username">Name: <abbr title="required">*</abbr></label>
     <input id="username" type="text" name="username">
-    <abbr title="required">*</abbr>
-  </label>
-</div>
+  </div>
+  <br><br>
 
-<!-- But this is probably best: -->
-<div>
-  <label for="username">Name: <abbr title="required">*</abbr></label>
-  <input id="username" type="text" name="username">
-</div>
 
-<body>
-    <h1>Formulário de Contato</h1>
-    <form action="/submit" method="post">
-        <label for="name">Nome:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+  <main class="cartao">
+    <div>
+      <img class="imagem-banner" src="../img/Efo.png" class="card-img-top" alt="...">
+      <h5>Um produto Porto Seguro</h5>
+    <div class="bloco">
+      
+      <p>Oferecemos cobertura completa para todas as necessidades de
+        saúde do seu animal de estimação.</p>
+    </div> 
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <a class="botao-foto" href="https://www.portoseguro.com.br/plano-saude-pets?_gl=1*1fhc18e*_gcl_aw*R0NMLjE3MTk2Njc2MjkuQ2p3S0NBanc0ZjZ6QmhCVkVpd0FURUhGVm9tNldqM2RBeGMzTldXcFViY1FTejVBZUQzY2xlcUl1LWl3RWo5dGxpQVBXQ1RMSWJYX0dSb0NCUkVRQXZEX0J3RQ..*_gcl_au*MTAwMjM1NjU3MS4xNzE5MzY0MjIy*_ga*MzAxMjc4OTM3LjE3MTkzNjQyMjI.*_ga_S9FTJ8D526*MTcxOTY2NzYyOS4yLjEuMTcxOTY2NzY0Mi40Ny4wLjA."
+        class="btn btn-primary">Veja o site</a>
 
-        <label for="message">Mensagem:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    </div>
 
-        <input type="submit" value="Enviar">
-    </form>
+  </main>
+
 </body>
+
 </html>
