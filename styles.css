@@ -7,13 +7,12 @@
 body { 
   
   height: 100vh; /* Utilize 100vh para garantir que o corpo ocupe toda a altura da viewport */
-  background-image: url('./img/grande.jpg');
+  background-image: url(./img/backgraudn.jpg);
   background-repeat: no-repeat;
   background-size: cover; /* Ajuste o tamanho para 'contain' */
   background-position: center;
   background-attachment: fixed;
-  box-sizing: border-box;
-  margin: 5px;
+  font-family: Arial, sans-serif;
 
 }
 /* banner do meio da tela*/
@@ -23,16 +22,14 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid azure;
-  border-style: groove;
-  border-radius: 10px;
   padding: 20px;
   width: 28%;
-  background-color: #b2dafa;
   margin: auto;
 }
 .bloco{
-  background-color: #b2dafa;
+  background-color: #ebeff3;
+  height: 140px;
+  border-style: dashed;
 }
 .botao-foto{
   border: 1px solid black;
@@ -45,8 +42,8 @@ body {
 }
 .imagem-banner{
   
-  height: 180px;
-  width: 180px;
+  height: 300px;
+  width: 300px;
   margin-bottom: 20px; /* Espaçamento inferior para separar a imagem do conteúdo */
   border-radius: 10px;
 }
@@ -54,15 +51,12 @@ body {
 
 
 
-
-.imagem-corretora{
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-}
-
-.cabecalho {
+/* barra de navegação*/
+.barra-nav{
+  
   background-color: #333;
+  color: #fff;
+  padding: 1px;
   width: 100%;
   height: 8%;
   color: white;
@@ -73,10 +67,19 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
+
+
 }
-.cabecalho-h1 {
-  text-align: center;
-  color: #4cae4c;
+
+
+.logo{
+  display: flex;
+  margin: 5px; 
+}
+.imagem-corretora{
+  width: 50px;
+  height: 50px;
+  padding: 5px;
 }
 .nav {
   display: flex;
@@ -86,10 +89,21 @@ body {
   font-size: 18px;
 }
 
+
+
+.cabecalho-h1 {
+  text-align: center;
+  color: #4cae4c;
+  font-family: Arial, sans-serif;
+}
+
+
+
 .link{
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
+  
 }
 .nav a:hover {
   text-decoration: underline;
@@ -106,21 +120,10 @@ body {
       
   }
 }
-.logo{
-  display: flex;
-  margin: 5px;
-  
-  
-}
 
 
-.cabecalho{
-  display: flex;
-  background-color: #333;
-  color: #fff;
-  padding: 1px;
-  
-}
+
+
 
 header .container {
   display: flex;
