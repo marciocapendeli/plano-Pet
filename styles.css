@@ -15,42 +15,6 @@ body {
   font-family: Arial, sans-serif;
 
 }
-/* banner do meio da tela*/
-
-.cartao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  width: 28%;
-  margin: auto;
-}
-.bloco{
-  background-color: #ebeff3;
-  height: 140px;
-  border-style: dashed;
-}
-.botao-foto{
-  border: 1px solid black;
-  text-decoration: none;
-  border-radius: 15px;
-  padding: 5px;
-  background-color: rgb(90, 131, 90);
-  color: white;
-  margin-top: auto;
-}
-.imagem-banner{
-  
-  height: 300px;
-  width: 300px;
-  margin-bottom: 20px; /* Espaçamento inferior para separar a imagem do conteúdo */
-  border-radius: 10px;
-}
-
-
-
-
 /* barra de navegação*/
 .barra-nav{
   
@@ -67,7 +31,6 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-
 
 }
 
@@ -89,16 +52,6 @@ body {
   font-size: 18px;
 }
 
-
-
-.cabecalho-h1 {
-  text-align: center;
-  color: #4cae4c;
-  font-family: Arial, sans-serif;
-}
-
-
-
 .link{
   color: white;
   text-decoration: none;
@@ -108,80 +61,76 @@ body {
 .nav a:hover {
   text-decoration: underline;
 }
-
-@media (max-width: 600px) {
-  .cabecalho {
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-  }
-  .nav {
-      flex-direction: column;
-      
-  }
+.cabecalho-h1 {
+  text-align: center;
+  color: #4cae4c;
+  font-size: 50px;
+  font-style: oblique;
+  font-family: Arial, sans-serif;
+  padding: auto;
+  margin-top: 20px;
 }
 
-
-
-
-
-header .container {
+/* banner do meio da tela*/
+.cartao {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 28%;
+  margin: auto;
 }
-
-
-header h1 {
-  margin-left: 20px;
+.bloco{
+  background-color: #ebeff3;
+  height: 160px;
+  width: 80%; 
+  max-width: 400px; 
+  margin: auto; 
+  border: 2px solid #4CAF50; 
+  padding: 1px; 
+  border-radius: 10px; 
+  background-color: #f9f9f9; 
+  text-align: center;
 }
-
- .lista-filho {
-  border: 1px solid yellowgreen;
-  background-color: white;
-  border-radius: 15px;
-  height: 25px;
-  width: 100px;
-  display: inline;
-  margin-right: 20px;
-}
-.containe2{
-  width: 100;
-  display: block;
-  
-
-}
-.Paragrafo{
-  width: 200px;
-  color: black;
-  word-break: break-word;
-  margin: 10px auto;
-}
-.imagem1 {
-  width: 25%;
-  opacity: 0.5;
-}
-h3 {
-  width: 300px;
-  word-break: break-word;
-  margin: 0 auto;
-}
-
-nav a {
-  color: #fff;
+.botao-foto{
+  border: 1px solid black;
   text-decoration: none;
-  font-weight: bold;
-  list-style-type: none;
-  margin-right: 20px;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: rgb(90, 131, 90);
+  color: white;
+  margin-top: auto;
+}
+.imagem-banner{
+  
+  height: 300px;
+  width: 300px;
+  margin-bottom: 20px; /* Espaçamento inferior para separar a imagem do conteúdo */
+  border-radius: 10px;
 }
 
-
+/* sobre */
 .section0 {
+  display: flex; 
+  justify-content: center;
   padding: 50px 0;
   text-align: center;
   align-items: center;
 }
 
+.containe2{
+  width: 80%; 
+  max-width: 400px;
+  border: 2px solid #4CAF50; 
+  padding: 1px; 
+  border-radius: 10px; 
+  background-color: #f9f9f9;
+}
+
+
+
+/*serviços*/
 .section1 {
   padding: 50px 0;
   text-align: center;
@@ -195,13 +144,22 @@ nav a {
   align-items: center;
 }
 
+ .lista-filho {
+  border: 1px solid yellowgreen;
+  background-color: white;
+  border-radius: 15px;
+  height: 25px;
+  width: 100px;
+  display: inline;
+  margin-right: 20px;
+}
+
+/*contato*/
 .section2 {
   padding: 50px 0;
   text-align: center;
   align-items: center;
 }
-
-
 .container {
   width: 80%;
   margin: auto;
@@ -221,15 +179,19 @@ button {
 button:hover {
   background-color: #4cae4c;
 }
+
+/*formulario*/
 .formulario {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
+  width: 80%; 
+  max-width: 400px; 
+  margin: auto; 
+  border: 2px solid #4CAF50; 
+  padding: 1px; 
+  border-radius: 10px; 
+  background-color: #f9f9f9; 
+  text-align: center;
 }
-/* A container principal deve ocupar todo o espaço disponível */
-.container-principal {
-  flex: 1;
-}
+
 
 /* Footer */
 .rodape{
