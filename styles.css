@@ -4,69 +4,57 @@
   padding: 0;
   box-sizing: border-box;
 }
-body { 
-  margin-top: auto;
-  height: 100vh; /* Utilize 100vh para garantir que o corpo ocupe toda a altura da viewport */
-  background-image: url(./img/backgraudn.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; /* Ajuste o tamanho para 'contain' */
-  background-position: center;
-  background-attachment: fixed;
-  font-family: Arial, sans-serif;
+body {  
+    height: 100vh; /* Utilize 100vh para garantir que o corpo ocupe toda a altura da viewport */
+    background-image: url(./img/backgraudn.jpg);
+    background-repeat: no-repeat;
+    background-size:95%; /* Ajuste o tamanho para 'cover' */
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+  }
 
-}
 /* barra de navegação*/
-.barra-nav{
-  border-bottom: 1px solid black;
-  background-color: white;
-  color: black;
-  padding: 1px;
-  width: 100%;
-  height: 8%;
-  gap: 50%;
+.barra-nav {
+  background-color: #f8f9fa; /* Cor de fundo */
+  border-bottom: 2px solid #343a40; /* Cor da borda inferior */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 24px;
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 20px;
   font-weight: bold;
-  text-decoration: none;
+}
 
-}
-.logo{
+.logo {
   display: flex;
-  margin: 5px; 
+  align-items: center;
 }
-.imagem-corretora{
+
+.imagem-corretora {
   width: 50px;
-  height: 50px;
-  padding: 5px;
+  height: auto; /* Altura automática para manter proporção */
+  margin-right: 10px; /* Espaçamento à direita */
 }
+
 .nav {
   display: flex;
-  gap: 20px;
-  margin: 5px 10px 5px 0;
-  text-decoration: none;
-  font-size: 18px;
 }
 
-.link{
-  color: black;
+.nav a {
+  color: #343a40; /* Cor do texto dos links */
   text-decoration: none;
-  font-size: 20px;
-  
+  margin-right: 20px; /* Espaçamento entre os links */
+  transition: color 0.3s ease; /* Transição suave da cor */
 }
+
 .nav a:hover {
-  text-decoration: underline;
+  color: #007bff; /* Cor do texto ao passar o mouse */
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
 }
-.cabecalho-h1 {
-  text-align: center;
-  color: #4cae4c;
-  font-size: 50px;
-  font-style: oblique;
-  font-family: Arial, sans-serif;
-  padding: auto;
-  margin-top: 20px;
-}
+
 
 /* banner do meio da tela*/
 .cartao {
@@ -179,6 +167,10 @@ button:hover {
 .imagem-zap{
   width: 20px;
   height: 20px;
+}
+.cabecalho-h1 {
+  text-align: center;
+  color: #4cae4c;
 }
 /*formulario*/
 .formulario {
